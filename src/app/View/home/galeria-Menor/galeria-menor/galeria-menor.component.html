@@ -1,0 +1,17 @@
+<div class="mas-grande">
+  <div class="contenedor-grande">
+    <h1 class="letter">Customer Gallery</h1>
+    <br>
+    <div>
+      <div class="container">
+        <div class="div-imagen" *ngFor="let item of Galeria" >
+          <img [src]="item.direccion">
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <button class="custom-button">View Gallery</button>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+#Section {
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    top: -290px;
+}
+
+.Caja {
+    max-width: 750px;
+    margin: 0 auto;
+    height: 80vh;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--grissuave);
+}
+
+.Caja h2 {
+    font-size: 24px;
+    color: var(--azul);
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.ListaBotones {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ListaBotones li {
+    margin-right: 10px;
+}
+
+.alinearBtnCart,
+.alinearBtnCartamarillo,
+.add-to-cart-btn {
+    background-color: white;
+    color: var(--azul);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+}
+
+.alinearBtnCartamarillo {
+    background-color: white;
+}
+
+.alinearBtnCart:hover,
+.alinearBtnCartamarillo:hover,
+.add-to-cart-btn:hover {
+    background-color: var(--amarillo);
+}
+
+.container-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.container-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.container-card h3 {
+    font-size: 18px;
+    color: var(--azuloscuro);
+    margin-bottom: 10px;
+}
+
+.container-card p {
+    font-size: 14px;
+    color: var(--azuloscuro);
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: var(--azuloscuro);
+    color: white;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 170px;
+}

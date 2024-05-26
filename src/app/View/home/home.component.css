@@ -1,0 +1,108 @@
+section{
+display:  flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #FFF
+    }
+    
+.alinearBtnCartamarillo{
+cursor: pointer;
+ display: flex;
+ color: #ffffff;
+ margin: 10px;
+padding: 10px;
+font-size: 16px;
+border-radius: 18px;
+background-color:  #FDBB03;
+box-shadow: 3px 3px 8px rgba 0,0,0,0.3;
+text-align: center;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+    
+    ul{
+display:flex;
+flex-direction: row-reverse;
+align-items: center;
+  }
+        
+li{
+list-style: none;
+}
+.alinearBtnCart{
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+color: #03859D;
+margin:10px;
+padding: 10px;
+font-size: 16px;
+border-radius: 18px;
+background-color: aliceblue;
+box-shadow: 3px 3px 8px rgba 0,0,0,0.3;
+text-align: center;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+            
+             
+ h2{
+margin-top: 50px;
+color: #03859D;
+text-align: center;
+            }
+            
+.Caja{
+background-color:#D9D9D9;
+border-radius: 15px;
+width: 1200px; /* ancho aumentado */
+height: 600px; 
+}
+
+.ListaBotones{
+margin: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ImgHddr{
+    border-radius: 10px;
+    width: -300px;
+    height: -300px;
+}
+
+.Papaya{
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+    font-size: 24px;
+    border-radius:6px;
+    outline:none;
+    position: relative;
+    text-transform:uppercase;
+    background-color:#D9D9D9;
+}
+
+.Papaya {
+    margin: 20px; /* Establece un margen alrededor de la sección */
+    padding: 10px; /* Añade espacio interno a la sección */
+  }
+  
+  .Producto {
+    margin-bottom: 70px; /* Añade espacio entre cada producto */
+  }
+  
+  .ImgHG {
+    max-width: -100px; /* Establece el ancho máximo de la imagen */
+  }
+  
+  .TitleHG,
+  .TitleHG2 {
+    font-size: 14px; /* Reduzca el tamaño de la fuente de los títulos */
+  }
+  
+  button {
+    font-size: 12px; /* Reduzca el tamaño de fuente de los botones */
+  }
+  

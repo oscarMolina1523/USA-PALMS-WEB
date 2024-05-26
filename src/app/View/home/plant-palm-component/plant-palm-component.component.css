@@ -1,0 +1,69 @@
+.why-plant-palm-trees {
+    position: relative;
+    padding: 10px;
+    width: 60%;
+    height: 70vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: -160px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--azul);
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    height: 90vh;
+    border-radius: 40px;
+}
+
+.card {
+    background-color: var(--grissuave);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.icon-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+}
+
+.icon-image {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    margin-top: 25px;
+    font-size: 18px;
+    color: var(--gris);
+}

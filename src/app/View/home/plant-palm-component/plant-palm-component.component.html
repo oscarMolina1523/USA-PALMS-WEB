@@ -1,0 +1,12 @@
+<section class="why-plant-palm-trees">
+    <h2>Why Plant Palm Trees?</h2>
+        <div class="row card-container">
+            <div *ngFor="let item of item"class="card">
+                <div class="icon-container">
+                    <img [src]="item.imgSrc" [alt]="item.altImg" class="card-image">
+                    <img [src]="item.imgIconSrc" [alt]="item.altIcon" class="icon-image">
+                </div>
+                <h3>{{ item.title }}</h3>
+            </div>
+        </div>
+</section>

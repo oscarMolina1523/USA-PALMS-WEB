@@ -1,0 +1,46 @@
+<div class="ImgHG">
+    <img class="ImgHddr" src="{{ImgHeadG}}" />
+</div>
+<section class="SectG">
+    <div class="DivGP">
+        
+        <h2>Our Photo Gallery</h2>
+
+        <div class="cont-tags">
+            <i class="fas fa-chevron-left"></i>
+            <div class="list-tags">
+              <div *ngFor=" let btn of Btns, let index = index  " class="tag" >
+                <p><strong>{{btn.name}}</strong></p>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+
+        <div class="DivGPT">
+            <div style="width: 200px;">
+                <img class="ImgAl" src="{{ImgP2G}}" />
+            </div>
+            
+            <div style="width: 200px;">
+                <img class="ImgAl" src="{{ImgP2G}}" />
+            </div>
+
+            <div style="width: 200px;">
+                <img class="ImgAl" src="{{ImgP2G}}" />
+            </div>
+
+            <div style="width: 200px;">
+                <img class="ImgAl" src="{{ImgP2G}}" />
+            </div>
+
+            <div style="width: 200px;">
+                <img class="ImgAl" src="{{ImgP2G}}" />
+            </div>
+
+            <div style="width: 200px;">
+                <img class="ImgAl" src="{{ImgP2G}}" />
+            </div>
+        </div>
+
+    </div>
+</section>

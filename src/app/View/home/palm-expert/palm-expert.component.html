@@ -1,0 +1,24 @@
+<div class="image-container">
+    <img [src]="ImgPalm" alt="Descripción de la imagen" class="background-image">
+    <div class="text-overlay">
+        <div class="large-text">
+            The Palm Tree Expert!
+        </div>
+        <div class="small-text">
+            Your Local Palm Tree Nursery
+        </div>
+        <button class="yellow-button">BUY IT NOW</button>
+    </div>   
+    <div class="container-card">
+        <div *ngFor=" let item of items" >
+            <div class="card">
+                <i [class]="item.icon" ></i>
+                <h3>{{item.title}}</h3>
+                <p>{{item.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   

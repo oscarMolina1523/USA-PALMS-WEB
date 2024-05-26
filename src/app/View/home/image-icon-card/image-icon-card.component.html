@@ -1,0 +1,19 @@
+<section id="Section" cl>
+    <div class="Caja">
+        <h2>Perfects palms for you</h2>
+        <ul class="ListaBotones">
+            <li><button class="alinearBtnCart" id="Hoverbtn">See All</button></li>
+            <li><button class="alinearBtnCart">Patio Palms</button></li>
+            <li><button class="alinearBtnCartamarillo">Most Cold-Hardy</button></li>
+        </ul>
+
+        <div *ngFor="let element of item" class="container-card" >
+            <img [src]="element.image" alt="Imagen de {{ element.title }}" />
+            <h3>{{ element.title }}</h3>
+            <p>{{ element.text }}</p>
+            <button class="add-to-cart-btn">{{ element.buttonText }}</button>
+        </div>
+    
+    </div>
+</section>
+

@@ -1,0 +1,12 @@
+<div class="example-boundary" [style.backgroundImage]="'url(' + bg + ')'" style="
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;" #contentToConvert>
+    <span *ngFor="let item of plantsList">
+        <div [id]="item.id" class="example-box" cdkDragBoundary=".example-boundary" cdkDrag
+            (click)="toggleActive(item.id.toString())">
+            <img [src]="item.name" />
+        </div>
+    </span>
+</div>

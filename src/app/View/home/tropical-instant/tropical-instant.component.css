@@ -1,0 +1,53 @@
+.tropical-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.tropical-image {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.content-container {
+    flex: 1;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--azul);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-bottom: 15px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f75;
+}

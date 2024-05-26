@@ -1,0 +1,69 @@
+<div class="container">
+  <span>
+    <h2 class="title">Let Us Design Your Space</h2>
+    <h3 class="subtitle">What will your space look like with palms?</h3>
+  </span>
+
+  <div *ngIf="!imageUrl"
+    style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px;">
+    <div class="box1" [style.backgroundImage]="'url(' + bg + ')'">
+
+    </div>
+    <input type="file" #fileInput id="fileInput" style="visibility: hidden; opacity: 0;"
+      (change)="onFileChanged($event)">
+
+    <p style="color: var(--gris); font-family: Lato;">Add your image to design with palm trees</p>
+
+    <div class="btn-b azulo" (click)="triggerFileInput()">
+      <i class="fas fa-cloud-upload-alt"></i> Upload
+    </div>
+
+  </div>
+
+  
+
+
+  <app-dragzone *ngIf="imageUrl" [plant]="dragImgs" [bg]="imageUrl" #dragzone></app-dragzone>
+
+  <div *ngIf="imageUrl" class="btn-cont" >
+    <div class="btn-b azulc" *ngIf="!done" (click)="isDone()" >
+      <i class="fas fa-check"></i> Done
+    </div>
+    <div class="btn-b azulo" (click)="clean()">
+      <i class="fas fa-redo"></i> Clean
+    </div>
+    <div class="btn-b rojo" *ngIf="!done" (click)="eliminar()" >
+      <i class="fas fa-trash-alt"></i> Delete Palm
+    </div>
+    <div class="btn-b verde" *ngIf="done" (click)="descargar()" > 
+      <i class="fas fa-download"></i> Download
+    </div>
+  </div>
+  <div class="box2" *ngIf="imageUrl">
+    <h2 class="title">Select your palm</h2>
+    <div class="cont-tags">
+      <i class="fas fa-chevron-left"></i>
+      <div class="list-tags">
+        <div *ngFor=" let etiqueta of etiquetas, let index = index  " class="tag" (click)="addOrSupEti(index)"
+          [ngClass]="{'tag-active': etiquetaActiva(etiqueta.id), 'tag-inactive': !etiquetaActiva(etiqueta.id)}">
+          <p><strong>{{etiqueta.name}}</strong></p>
+        </div>
+      </div>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="plants-cont">
+      <div class="cont">
+        <div *ngFor=" let planta of plants ">
+          <div class="data">
+            <div class="cont-img">
+              <img src="{{planta.image}}" class="img-plants" alt="">
+            </div>
+            <div class="btn-add" (click)="agrevarImagen(planta.image)">
+              <p>Add Plants</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

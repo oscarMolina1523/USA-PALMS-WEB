@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --azul: #03859d;
+  --amarillo: #fdbb03;
+  --cielo: #b2f3f7;
+  --azul2: #036378;
+  --azuloscuro: #083945;
+  --rosado: #ea32ba;
+  --grisclaro: #e6e6e6;
+  --gris: #797979;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --grissuave: #d9d9d9;
+  --rojo: #e00d00;
+  --verde: #0ac306;
+}
+
+h2,
+h1,
+h3 {
+  font-family: Fraunces;
+}
+
+p, li, ul{
+    font-family: Lato;
+}

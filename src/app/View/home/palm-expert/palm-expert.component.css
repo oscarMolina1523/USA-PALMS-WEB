@@ -1,0 +1,81 @@
+.image-container {
+    position: relative;
+    width: 100%; 
+    height: 1200px; 
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+}
+
+.large-text {
+    font-size: 3rem; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+.small-text {
+    font-size: 3rem; 
+}
+.yellow-button {
+    background-color: #FDBB03; 
+    color: white; 
+    padding: 13px 13px; 
+    border: none; 
+    border-radius: 40px; 
+    cursor: pointer;
+    font-size: 1rem; 
+    margin-top: 40px; 
+}
+.container-card {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+    gap: 20px;
+    background: var(--blanco);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25px; /* Más redondeado */
+    width: 185px;
+    text-align: center;
+    height: 180px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15); /* Sombra */
+}
+
+.card .icon {
+    font-size: 4rem;
+    color: var(--azul);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--azul); 
+    margin-top: 20px; 
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--azuloscuro); 
+    margin-top: 20px; 
+}
+
+.fas {
+    font-size: 40px;
+    color: var(--azul);
+}

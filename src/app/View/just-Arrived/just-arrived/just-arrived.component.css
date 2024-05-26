@@ -1,0 +1,98 @@
+.Caja {
+  max-width: 950px;
+  height: 900px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #F4F4F4;
+}
+
+.container-card {
+  float: left;
+  width: calc(33.333% - 20px); /* Se resta el margen */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  /* top: 160px; */
+  margin-top: 10px;
+}
+
+.container-card:nth-child(3n) {
+  margin-right: 0; /* Para que la última caja de cada fila no tenga margen derecho */
+}
+
+.container-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.letter4 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-family: Inter;
+ }
+
+ .letter3 {
+  font-size: 16px;
+  color: darkslategray;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+/* .img-estilo {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 10px;
+} */
+
+.card-content {
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.letter {
+  font-size: 30px;
+  color: #03859D;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-family: Fraunces;
+  text-align: center;
+ }
+ .custom-button {
+  display: inline-block;
+
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #083945;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-button:hover {
+  background-color: #0e7ae6;
+  transform: translateY(-2px);
+}
+
+.custom-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
